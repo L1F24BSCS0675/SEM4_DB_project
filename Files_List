@@ -1,46 +1,145 @@
 restaurant_management/
 │
 ├── config/
-│   └── db.php                  ← FILE 1
+│   └── db.php                  
+│       ← FILE 1
+│       Database connection file.
+│       Connects PHP project with MySQL database.
 │
 ├── includes/
-│   ├── header.php              ← FILE 2
-│   └── footer.php              ← FILE 3
+│   ├── header.php              
+│   │   ← FILE 2
+│   │   Common top section of website.
+│   │   Contains navbar, Bootstrap links, logo, menu.
+│   │
+│   └── footer.php              
+│       ← FILE 3
+│       Common bottom section.
+│       Contains footer, copyright, JS links.
 │
 ├── auth/
-│   ├── login.php               ← FILE 4
-│   └── logout.php              ← FILE 5
+│   ├── login.php               
+│   │   ← FILE 4
+│   │   Login page for admin/user.
+│   │   Verifies email/password and starts session.
+│   │
+│   └── logout.php              
+│       ← FILE 5
+│       Ends session and logs user out.
 │
 ├── admin/
-│   ├── dashboard.php           ← FILE 6
-│   ├── manage_food.php         ← FILE 7
-│   ├── add_food.php            ← FILE 8
-│   ├── edit_food.php           ← FILE 9
-│   ├── delete_food.php         ← FILE 10
-│   ├── manage_categories.php   ← FILE 11
-│   ├── add_category.php        ← FILE 12
-│   ├── edit_category.php       ← FILE 13
-│   ├── delete_category.php     ← FILE 14
-│   ├── manage_customers.php    ← FILE 15
-│   ├── add_customer.php        ← FILE 16
-│   ├── edit_customer.php       ← FILE 17
-│   ├── delete_customer.php     ← FILE 18
-│   ├── manage_orders.php       ← FILE 19
-│   ├── add_order.php           ← FILE 20
-│   ├── edit_order.php          ← FILE 21
-│   └── delete_order.php        ← FILE 22
+│   ├── dashboard.php           
+│   │   ← FILE 6
+│   │   Admin home page.
+│   │   Shows statistics, cards, orders, customers.
+│   │
+│   ├── manage_food.php         
+│   │   ← FILE 7
+│   │   Displays all food items in table.
+│   │   Read operation.
+│   │
+│   ├── add_food.php            
+│   │   ← FILE 8
+│   │   Add new food item.
+│   │   Create operation.
+│   │
+│   ├── edit_food.php           
+│   │   ← FILE 9
+│   │   Edit/update food item details.
+│   │   Update operation.
+│   │
+│   ├── delete_food.php         
+│   │   ← FILE 10
+│   │   Deletes food item.
+│   │   Delete operation.
+│   │
+│   ├── manage_categories.php   
+│   │   ← FILE 11
+│   │   Shows food categories list.
+│   │   Read category data.
+│   │
+│   ├── add_category.php        
+│   │   ← FILE 12
+│   │   Adds new category.
+│   │   Create category.
+│   │
+│   ├── edit_category.php       
+│   │   ← FILE 13
+│   │   Updates category name/details.
+│   │
+│   ├── delete_category.php     
+│   │   ← FILE 14
+│   │   Deletes category.
+│   │
+│   ├── manage_customers.php    
+│   │   ← FILE 15
+│   │   Displays all customer records.
+│   │
+│   ├── add_customer.php        
+│   │   ← FILE 16
+│   │   Adds customer information.
+│   │
+│   ├── edit_customer.php       
+│   │   ← FILE 17
+│   │   Updates customer details.
+│   │
+│   ├── delete_customer.php     
+│   │   ← FILE 18
+│   │   Removes customer record.
+│   │
+│   ├── manage_orders.php       
+│   │   ← FILE 19
+│   │   Shows all orders and status.
+│   │
+│   ├── add_order.php           
+│   │   ← FILE 20
+│   │   Creates a new order.
+│   │
+│   ├── edit_order.php          
+│   │   ← FILE 21
+│   │   Updates order details/status.
+│   │
+│   └── delete_order.php        
+│       ← FILE 22
+│       Deletes order record.
 │
 ├── customer/
-│   ├── index.php               ← FILE 23
-│   ├── menu.php                ← FILE 24
-│   ├── cart.php                ← FILE 25
-│   ├── place_order.php         ← FILE 26
-│   └── order_history.php       ← FILE 27
+│   ├── index.php               
+│   │   ← FILE 23
+│   │   Customer homepage.
+│   │   Landing page of restaurant website.
+│   │
+│   ├── menu.php                
+│   │   ← FILE 24
+│   │   Shows restaurant menu with food cards.
+│   │
+│   ├── cart.php                
+│   │   ← FILE 25
+│   │   Shopping cart page.
+│   │   Stores selected food items.
+│   │
+│   ├── place_order.php         
+│   │   ← FILE 26
+│   │   Final checkout page.
+│   │   Saves order into database.
+│   │
+│   └── order_history.php       
+│       ← FILE 27
+│       Shows previous customer orders.
 │
 ├── css/
-│   └── style.css               ← FILE 28
+│   └── style.css               
+│       ← FILE 28
+│       Website styling file.
+│       Colors, spacing, buttons, layout, design.
 │
 ├── js/
-│   └── script.js               ← FILE 29
+│   └── script.js               
+│       ← FILE 29
+│       JavaScript functions.
+│       Validation, alerts, dynamic behavior.
 │
-└── index.php                   ← FILE 30
+└── index.php                   
+    ← FILE 30
+    Main project entry point.
+    Opens website and redirects to homepage/login.
