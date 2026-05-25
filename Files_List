@@ -1,0 +1,46 @@
+restaurant_management/
+│
+├── config/
+│   └── db.php                  ← FILE 1
+│
+├── includes/
+│   ├── header.php              ← FILE 2
+│   └── footer.php              ← FILE 3
+│
+├── auth/
+│   ├── login.php               ← FILE 4
+│   └── logout.php              ← FILE 5
+│
+├── admin/
+│   ├── dashboard.php           ← FILE 6
+│   ├── manage_food.php         ← FILE 7
+│   ├── add_food.php            ← FILE 8
+│   ├── edit_food.php           ← FILE 9
+│   ├── delete_food.php         ← FILE 10
+│   ├── manage_categories.php   ← FILE 11
+│   ├── add_category.php        ← FILE 12
+│   ├── edit_category.php       ← FILE 13
+│   ├── delete_category.php     ← FILE 14
+│   ├── manage_customers.php    ← FILE 15
+│   ├── add_customer.php        ← FILE 16
+│   ├── edit_customer.php       ← FILE 17
+│   ├── delete_customer.php     ← FILE 18
+│   ├── manage_orders.php       ← FILE 19
+│   ├── add_order.php           ← FILE 20
+│   ├── edit_order.php          ← FILE 21
+│   └── delete_order.php        ← FILE 22
+│
+├── customer/
+│   ├── index.php               ← FILE 23
+│   ├── menu.php                ← FILE 24
+│   ├── cart.php                ← FILE 25
+│   ├── place_order.php         ← FILE 26
+│   └── order_history.php       ← FILE 27
+│
+├── css/
+│   └── style.css               ← FILE 28
+│
+├── js/
+│   └── script.js               ← FILE 29
+│
+└── index.php                   ← FILE 30
