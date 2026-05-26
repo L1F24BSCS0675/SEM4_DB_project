@@ -1,0 +1,385 @@
+/* =============================================
+   FoodieHub - Restaurant Management System
+   Main Stylesheet
+   ============================================= */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* =============================================
+   HERO SECTION
+   ============================================= */
+.hero-section {
+    min-height: 480px;
+    background: linear-gradient(135deg, #b5451b 0%, #e8813a 60%, #f5a623 100%);
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 350px;
+    height: 350px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+}
+
+/* =============================================
+   SIDEBAR
+   ============================================= */
+.sidebar {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 20px;
+    min-height: 400px;
+}
+
+.side-link {
+    color: #555 !important;
+    border-radius: 10px;
+    padding: 10px 12px !important;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+.side-link:hover {
+    background: #fff3e0 !important;
+    color: #e8813a !important;
+    padding-left: 18px !important;
+}
+
+.active-link {
+    background: linear-gradient(135deg, #b5451b, #e8813a) !important;
+    color: white !important;
+    border-radius: 10px;
+    padding: 10px 12px !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =============================================
+   STAT CARDS
+   ============================================= */
+.stat-card {
+    border-radius: 15px !important;
+    transition: all 0.3s;
+    border-left-width: 4px !important;
+    border-left-style: solid !important;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12) !important;
+}
+
+.stat-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =============================================
+   CARDS GENERAL
+   ============================================= */
+.card {
+    border-radius: 12px !important;
+}
+
+.card-header {
+    border-bottom: 1px solid #f0f0f0 !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+/* =============================================
+   NAVBAR
+   ============================================= */
+.navbar {
+    box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+    padding: 12px 20px;
+}
+
+.navbar-brand {
+    font-size: 22px !important;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px !important;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* =============================================
+   BUTTONS
+   ============================================= */
+.btn-warning {
+    background: linear-gradient(135deg, #e8813a, #f5a623);
+    border: none;
+    color: white !important;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, #b5451b, #e8813a);
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(232,129,58,0.4);
+}
+
+.btn {
+    border-radius: 8px !important;
+    font-weight: 500;
+}
+
+/* =============================================
+   FORM CONTROLS
+   ============================================= */
+.form-control,
+.form-select {
+    border-radius: 8px !important;
+    border: 2px solid #eee;
+    padding: 10px 14px;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #e8813a;
+    box-shadow: 0 0 0 0.2rem rgba(232,129,58,0.2);
+}
+
+/* =============================================
+   TABLES
+   ============================================= */
+.table {
+    font-size: 14px;
+}
+
+.table thead th {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    padding: 14px 16px;
+}
+
+.table tbody td {
+    padding: 12px 16px;
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background: #fff8f0;
+}
+
+/* =============================================
+   AVATAR CIRCLE (customers table)
+   ============================================= */
+.avatar-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e8813a, #f5a623);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+/* =============================================
+   FOOD CARDS (customer menu)
+   ============================================= */
+.food-card,
+.food-menu-card {
+    border-radius: 15px !important;
+}
+
+/* =============================================
+   FEATURE BOX (home page)
+   ============================================= */
+.feature-box {
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.feature-box:hover {
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+
+/* =============================================
+   PAGE BANNER
+   ============================================= */
+.page-banner {
+    border-bottom: 3px solid rgba(255,255,255,0.2);
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer a:hover {
+    color: #e8813a !important;
+}
+
+/* =============================================
+   ALERTS
+   ============================================= */
+.alert {
+    border-radius: 10px !important;
+    border: none !important;
+}
+
+.alert-success {
+    background: #d1e7dd;
+    color: #0a3622;
+}
+
+.alert-danger {
+    background: #f8d7da;
+    color: #58151c;
+}
+
+.alert-warning {
+    background: #fff3cd;
+    color: #664d03;
+}
+
+.alert-info {
+    background: #cff4fc;
+    color: #055160;
+}
+
+/* =============================================
+   BADGES
+   ============================================= */
+.badge {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    padding: 5px 10px !important;
+    border-radius: 6px !important;
+}
+
+/* =============================================
+   SCROLLBAR
+   ============================================= */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e8813a;
+    border-radius: 3px;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .sidebar {
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+        min-height: auto;
+    }
+
+    .stat-card {
+        margin-bottom: 15px;
+    }
+
+    h1.display-4 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 18px !important;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+}
+
+/* =============================================
+   ANIMATIONS
+   ============================================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.3s ease;
+}
+
+/* =============================================
+   LOGIN PAGE
+   ============================================= */
+.login-card {
+    animation: fadeInUp 0.5s ease;
+}
+
+/* =============================================
+   TOAST
+   ============================================= */
+.toast {
+    border-radius: 10px !important;
+    min-width: 250px;
+}
